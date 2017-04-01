@@ -1,0 +1,78 @@
+/* 2.1 */
+/* Logo
+/* ========================================================================== */
+.header {
+  .logo {
+    width: 220px;
+    height: 100px;
+    line-height: 100px;
+    background-color: $default-theme-color;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 15px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+    a {
+      margin: auto auto;
+      display: block;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.is-sticky .logo {
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+}
+.is-sticky .logo img {
+  max-width: none;
+  height: 40px;
+}
+
+
+.full-screen-map .logo {
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+}
+.full-screen-map .logo img {
+  max-width: none;
+  height: 40px;
+}
+@media (max-width: 991px) {
+  .footer {
+    .logo {
+      width: 140px;
+      height: 50px;
+      line-height: 50px;
+    }
+    .logo img {
+      max-width: none;
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    .logo {
+      padding-top: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+.logo,
+.logo a,
+.logo img,
+.is-sticky .logo,
+.is-sticky .logo a,
+.is-sticky .logo img {
+  -webkit-transition: none;
+  transition: none;
+}
